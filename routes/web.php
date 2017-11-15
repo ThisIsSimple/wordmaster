@@ -22,7 +22,18 @@ Route::get('/', function () {
 });
 
 
-Route::get('words/create', 'WordsController@create');
+//Route::get('words/create', 'WordsController@create');
+Route::get('words/create', function() {
+    $new_note = App\Note::create();
+
+    $json = [
+        'status'=>'success',
+        'note_id'=>$new_note->id,
+        'name'=>$new_note->name,
+    ];
+
+    return json_encode($json);
+});
 Route::get('words/update', 'WordsController@update');
 Route::get('words/delete', 'WordsController@delete');
 
