@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App;
 
 class NotesController extends Controller
 {
@@ -13,7 +14,7 @@ class NotesController extends Controller
 
     public function create()
     {
-        $new_note = \App\Note::create();
+        $new_note = App\Note::create();
 
         $json = [
             'status'=>'success',
@@ -29,10 +30,8 @@ class NotesController extends Controller
         $note_id = $_GET['note_id'];
         $note_name = $_GET['note_name'];
 
-        $note = \App\Note::find($note_id);
+        $note = App\Note::find($note_id);
         $note->name = $note_name;
-
-        $json = [];
 
         if($note->save()) {
             $json = [
@@ -53,7 +52,7 @@ class NotesController extends Controller
     {
         $note_id = $_GET['note_id'];
 
-        $note = \App\Note::find($note_id);
+        $note = App\Note::find($note_id);
 
         if($note->delete()) {
             $json = [
