@@ -22,8 +22,8 @@ Route::get('/', function () {
 });
 
 
-//Route::get('words/create', 'WordsController@create');
-Route::get('words/create', function() {
+//Route::get('/words/create', 'WordsController@create');
+Route::get('/words/create', function() {
     $new_note = App\Note::create();
 
     $json = [
@@ -34,12 +34,12 @@ Route::get('words/create', function() {
 
     return json_encode($json);
 });
-Route::get('words/update', 'WordsController@update');
-Route::get('words/delete', 'WordsController@delete');
+Route::get('/words/update', 'WordsController@update');
+Route::get('/words/delete', 'WordsController@delete');
 
-Route::get('note/create', 'NotesController@create');
-Route::get('note/update', 'NotesController@update');
-Route::get('note/delete', 'NotesController@delete');
+Route::get('/note/create', 'NotesController@create');
+Route::get('/note/update', 'NotesController@update');
+Route::get('/note/delete', 'NotesController@delete');
 
 Route::get('login', function() {
     return view('login');
