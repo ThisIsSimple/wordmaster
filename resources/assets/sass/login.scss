@@ -1,0 +1,22 @@
+@import "variables";
+
+.btn-facebook {
+  background-color: $facebook-color;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($facebook-color, 10%);
+    color: #fff;
+  }
+}
+
+
+.btn-naver {
+  background-color: $naver-color;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($naver-color, 10%);
+    color: #fff;
+  }
+}

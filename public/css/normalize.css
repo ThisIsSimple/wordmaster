@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #FF3465;
+}
+
+a:hover {
+  color: #ff013e;
+}
+
+.btn-primary {
+  background-color: #FF3465;
+  border-color: #FF3465;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #ff013e;
+  border-color: #ff013e;
+}
+
+.btn-primary:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-primary:not([disabled]):not(.disabled).active,
+.btn-primary:not([disabled]):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #ff013e;
+  border-color: #ff013e;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-square {
+  color: #fff;
+}
+
+.btn-square:hover {
+  background-color: #ff013e;
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.word {
+  min-height: 120px;
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.word.plus .card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.word .delete-word {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  background-color: #eee;
+}
+
+.word .delete-word i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.word .delete-word:hover {
+  background-color: #d5d4d4;
+  cursor: pointer;
+}
+
+.note:focus,
+.note:active {
+  outline: none;
+}
+
+.list-group-item,
+.list-group-item.disabled,
+.list-group-item:hover,
+.list-group-item:active,
+.list-group-item:focus,
+.list-group-item:first-child,
+.list-group-item:last-child {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+}
+
+.list-group-item:hover {
+  background-color: #ff013e;
+}
+
+.list-group-item.active {
+  background-color: #fff;
+  color: #FF3465;
+}
+
+.list-group-item.active:hover {
+  background-color: #fff;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #FF3465;
+}
+
+.word-input {
+  width: 100%;
+  text-align: center;
+  border: 0;
+  padding: 0;
+}
+
+.word-input:focus {
+  outline: 0;
+}
+

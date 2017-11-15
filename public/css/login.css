@@ -1,0 +1,20 @@
+.btn-facebook {
+  background-color: #4469AF;
+  color: #fff;
+}
+
+.btn-facebook:hover {
+  background-color: #36538a;
+  color: #fff;
+}
+
+.btn-naver {
+  background-color: #1EC545;
+  color: #fff;
+}
+
+.btn-naver:hover {
+  background-color: #179935;
+  color: #fff;
+}
+

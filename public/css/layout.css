@@ -1,0 +1,21 @@
+body > * {
+  height: 100vh;
+}
+
+#content,
+#left,
+#right {
+  overflow-y: scroll;
+}
+
+body,
+#content {
+  background-color: #F8F9FA;
+}
+
+#left,
+#right {
+  background-color: #FF3465;
+  color: #fff;
+}
+
