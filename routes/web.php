@@ -32,7 +32,8 @@ Route::get('/words/create', function() {
         'name'=>$new_note->name,
     ];
 
-    return json_encode($json);
+//    return json_encode($json);
+    return view('word');
 });
 Route::get('/words/update', 'WordsController@update');
 Route::get('/words/delete', 'WordsController@delete');
